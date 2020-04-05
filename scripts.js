@@ -2082,5 +2082,5 @@ const quotes = [
 ]
 
 const quoteDiv = document.querySelector('.quote')
-const quote = quotes[0].snippet
+const quote = quotes[Math.floor(Math.random() * quotes.length)].snippet
 quoteDiv.innerHTML = quote
